@@ -16,6 +16,7 @@ void subset(int i,int n,vector<int>& nums,vector<int>& ans,vector<vector<int>>& 
     {
        
         i++;
+        continue;
     }
     subset(i+1,n,nums,ans,getall);
 
