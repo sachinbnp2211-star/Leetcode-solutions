@@ -1,8 +1,7 @@
 class Solution {
 public:
     vector<int> arrayRankTransform(vector<int>& arr) {
-        vector<int>p=arr;
-        sort(p.begin(),p.end());
+        
         unordered_map<int,int>mp;
         for(int val:arr)
         {
