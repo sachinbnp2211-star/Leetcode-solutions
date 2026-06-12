@@ -7,28 +7,7 @@ public:
 
         
 
-    //    for(int v:nums1)
-    //    {
-    //     if(st.find(v)!=st.end())
-    //     {
-    //         continue;
-    //     }
-    //     else{
-    //         st.insert(v);
-    //     }
-
-    //    } 
-    //    for(int v:nums2)
-    //    {
-    //     if(vt.find(v)!=vt.end())
-    //     {
-    //         continue;
-    //     }
-    //     else{
-    //         vt.insert(v);
-    //     }
-
-    //    } 
+    
        for(auto i:st)
        {
         if(vt.find(i)!=vt.end())
