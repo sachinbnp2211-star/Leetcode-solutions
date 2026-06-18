@@ -22,7 +22,7 @@ public:
 
         while (!q.empty()) {
             int levelsize = q.size();
-            int min=q.front().second;
+            long long min=q.front().second;
             
             long long first,last;
 
