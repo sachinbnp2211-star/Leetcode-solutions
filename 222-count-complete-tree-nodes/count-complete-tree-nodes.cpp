@@ -11,18 +11,39 @@
  */
 class Solution {
 public:
-  
     int countNodes(TreeNode* root) {
         if(root==nullptr)
         {
             return 0;
+
         }
-        int count=0;
-        if(root->left&&root->right)
+        int lh=findleft(root);
+        int rh=findright(root);
+        if(lh==rh)
         {
-            count+=1;
+            return( (1<<lh)-1);
         }
         return 1+countNodes(root->right)+countNodes(root->left);
         
     }
+   int findleft(TreeNode* root)
+   {
+    int ht=0;
+    while(root)
+    {
+        ht++;
+        root=root->left;
+    }
+    return ht;
+   }
+   int findright(TreeNode* root)
+   {
+    int ht=0;
+    while(root)
+    {
+        ht++;
+        root=root->right;
+    }
+    return ht;
+   }
 };
